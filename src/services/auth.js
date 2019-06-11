@@ -2,7 +2,7 @@ import { WebAuth } from 'auth0-js';
 
 const auth0 = new WebAuth({
   domain: 'dev-42lab11.auth0.com',
-  clientId: 'SRQ5kIwN2ZsEImC6k21BZZiUiyKNWKE4',
+  clientID: 'SRQ5kIwN2ZsEImC6k21BZZiUiyKNWKE4',
   redirectUri: 'http://localhost:7890/callback',
   responseType: 'token id_token',
   scope: 'openid profile'
@@ -10,7 +10,6 @@ const auth0 = new WebAuth({
 });
 
 // if user isn't logged in send them to auth0 to login/signup
-
 export const login = () => {
   auth0.authorize();
 };
