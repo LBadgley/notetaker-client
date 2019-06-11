@@ -55,7 +55,7 @@ describe('notes reducer', () => {
     };
     const newState = reducer(initialState, {
       type: FETCH_NOTES,
-      payload: [{ title: 'title 1', body: 'body1' }]
+      payload: [{ title: 'title1', body: 'body1' }]
     });
     expect(newState).toEqual({
       loading: false,
