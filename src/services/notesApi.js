@@ -1,5 +1,4 @@
 export const createNote = note => {
-  console.log(JSON.stringify(note));
   return fetch('http://localhost:7899/api/v1/notes', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
