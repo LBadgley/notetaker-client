@@ -24,15 +24,15 @@ describe('notes action test', () => {
       payload: expect.any(Promise)
     });
   });
-  // it('creates an action to fetch all notes', () => {
-  //   const noteAction =  fetchNotes();
+  it('creates an action to fetch all notes', () => {
+    const noteAction =  fetchNotes();
 
-  //   expect(noteAction).toEqual({
-  //     type: 'FETCH_NOTES',
-  //     pendingType: 'FETCH_NOTES_PENDING',
-  //     fulfilledType: 'FETCH_NOTES_FULFILLED',
-  //     rejectedType: 'FETCH_NOTES_REJECTED',
-  //     payload: expect.any(Promise)
-  //   });
-  // });
+    expect(noteAction).toEqual({
+      type: 'FETCH_NOTES',
+      pendingType: 'FETCH_NOTES_PENDING',
+      fulfilledType: 'FETCH_NOTES_FULFILLED',
+      rejectedType: 'FETCH_NOTES_REJECTED',
+      payload: expect.any(Promise)
+    });
+  });
 });
