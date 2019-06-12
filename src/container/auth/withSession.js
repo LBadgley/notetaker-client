@@ -30,4 +30,4 @@ export const withSession = Component => {
     mapStateToProps,
     null
   )(WithSession);
-};
+}
